@@ -66,12 +66,12 @@ body {
 }
 
 .form-control.error input {
-    border-color: red;
+    border-color: yellow;
 }
 
 .form-control.error i.fa-exclamation-circle {
     transition: 0.7s;
-    color: red;
+    color: rgb(255, 0, 0);
     visibility: visible;
 }
 
@@ -111,7 +111,9 @@ body {
 
 .form-control.error small{
     visibility:visible;
-    color: red;
+    color: yellow;
+    text-shadow: 0 3px 10px black;
+
 }
 
 .form-control.success small{
