@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: 'Montserrat';
+}
+
+body {
+    transition: 1s;
+    background-color: #570A57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    margin: 0;
+}
+
+.container {
+    border: 2px solid #FFFF;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A91079;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px black;
+    width: 25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    color: aliceblue;
+    text-shadow: 0 4px 15px black;
+    margin: 30px 0 0px 0;
+    width: auto;
+    height: auto;
+    padding: 0 5px 0px 5px;
+
+   
+}
+.header h2 {
+    font-size: 30px;
+}
+.form {
+    padding: 10px 20px;
+    width: 20rem;
+    transition: 0.7s;
+
+}
+
+.form-control {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.success i.fa-circle-check {
+    transition: 0.7s;
+    color: green;
+    visibility: visible;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    transition: 0.7s;
+    color: red;
+    visibility: visible;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 4px 15px black;
+
+}
+
+.form-control input{
+    border: 2px solid rgb(165, 69, 160);
+    border-radius: 5px;
+    display: block;
+    padding: 7px;
+    font-family: inherit;
+    font-size: 15px;
+    width: 100%;
+}
+
+.form-control i{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    visibility:hidden;
+
+}
+
+.form-control small{
+    visibility:hidden;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
+
+.form-control.error small{
+    visibility:visible;
+    color: red;
+}
+
+.form-control.success small{
+    visibility:visible;
+    color: rgb(60, 235, 16);
+    text-shadow: 0 3px 10px black;
+}
+
+.form button {
+    background-color:#2E0249;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block;
+}
+.form button:hover {
+    background-color:#F806CC;
+
+    transition: 0.4s linear;
+
+}
