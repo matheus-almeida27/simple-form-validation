@@ -6,7 +6,6 @@ const passCheck = document.getElementById('passcheck');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
     checkInputs();
 })
 
@@ -60,6 +59,8 @@ function checkInputs() {
         setSuccessFor(passCheck,'Passwords match!'); 
     }
 }
+
+
 function setErrorFor(input, message) {
     const formControl = input.parentElement
     const small = formControl.querySelector('small')
